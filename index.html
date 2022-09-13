@@ -6,9 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        let counter = 0;
+        function count() {
+            counter++;
+            let h1 = document.querySelector('h1');
+            h1.innerHTML = counter;
+            if (counter%10 === 0) {
+                alert(`Count is now ${counter}`);
+            }
+
+        }
+        document.addEventListener('DOMContentLoaded', function(){
+            document.querySelector('button').onclick = count;
+            // document.querySelector('button').addEventListener('click',count);
+        });
+        
+    </script>
 </head>
 <body>
-    <h1>Demo Page</h1>
+    <h1>0</h1>
+    <button>Press to see change</button>
+    <!-- <button onclick="count()">Press to see change</button> -->
     <script src="app.js"></script>
 </body>
 </html>
