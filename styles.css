@@ -16,3 +16,7 @@ body {
 		background-position: 0% 50%;
 	}
 }
+div {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}

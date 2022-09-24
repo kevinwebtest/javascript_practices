@@ -8,18 +8,51 @@
     <link rel="stylesheet" href="styles.css">
     <script src="app.js"></script>
     <script src="submit.js"></script>
+    <script src="colors.js"></script>
+    <script src="form.js"></script>
+    <script src="api.js"></script>
 </head>
 <body>
     <!-- for app.js -->
     <h1>0</h1>
-    <button>Press to see change</button>
+    <button id="increment">Press to see change</button>
     <!-- <button onclick="count()">Press to see change</button> -->
 
     <!-- for submit.js -->
-    <h2>Insert Name</h2>
+    <h2 id="changecolor">Insert Name</h2>
     <form>
         <input autofocus id="name" placeholder="Name" type="text">
         <input type="submit">
     </form>
+
+    <!-- for colors.js -->
+    <div>
+        <button data-color="red">Red</button>
+        <button data-color="blue">Blue</button>
+        <button data-color="green">Green</button>
+
+        <select>
+            <option value="black">Black</option>
+            <option value="purple">Purple</option>
+            <option value="yellow">Yellow</option>
+        </select>
+    </div>
+
+    <!-- for form.js -->
+    <h2>Tasks to do</h2>
+    <ul id="tasks">
+    </ul>
+
+    <form id="form2">
+        <input id="task" type="text" placeholder="Insert Task">
+        <input id="submit" type="submit">
+    </form>
+
+
+    <!-- for api.js -->
+    <ul id="api">
+        
+    </ul>
+
 </body>
 </html>
